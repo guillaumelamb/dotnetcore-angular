@@ -3,7 +3,8 @@ mono: none
 dotnet: 2.1.0
 
 install:
-- dotnet restore
+ - ./install/dotnet-install.sh -Channel release/2.1.104
+ - dotnet restore
 
 script:
  - dotnet build
