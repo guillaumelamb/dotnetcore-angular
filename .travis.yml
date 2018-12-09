@@ -2,9 +2,6 @@ language: csharp
 mono: none
 dotnet: 2.1.0
 
-install:
- - ./install/dotnet-install.sh -Channel release/2.1.104
- - dotnet restore
-
 script:
+ - ./install/dotnet-install.sh -Channel release/2.1.104
  - dotnet build
